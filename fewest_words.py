@@ -69,7 +69,7 @@ def split_words_recursive(letters: List[str], words: Dict[str, List[str]]) -> Tu
 	if not results:
 		return None
 
-	# return the result with the fewest word, with the associated word appended to the begining
+	# return the result with the fewest words
 	return min(results, key=len)
 
 assert split_words_recursive('b', {'b': ['be']}) == ['b']
